@@ -11,7 +11,7 @@ type Props = {
     session: Awaited<ReturnType<typeof getServerSession>>
 }
 
-function ChatInput({ session }: Props) {
+function ChatInput({ session }: any) {
 
     const [input, setInput] = useState("");
     const { data: messages, error, mutate } = useSWR('/api/getMessages', fetcher);

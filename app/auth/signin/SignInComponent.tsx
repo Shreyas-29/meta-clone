@@ -13,7 +13,7 @@ function SignInComponent({ providers }: Props) {
                 <div key={provider.name}>
                     <button
                         onClick={() => signIn(provider.id, {
-                            callbackUrl: process.env.VERCEL_URL || 'http://localhost:3000',
+                            callbackUrl: process.env.LOCAL_URL || 'http://localhost:3000',
                         })}
                         className='bg-blue-500 text-white rounded-md px-6 py-2 hover:bg-blue-700 font-medium'
                     >

@@ -15,7 +15,7 @@ function SignInComponent({ providers }: Props) {
                         onClick={() => signIn(provider.id, {
                             callbackUrl: process.env.LOCAL_URL || 'http://localhost:3000',
                         })}
-                        className='bg-blue-500 text-white rounded-md px-6 py-2 hover:bg-blue-700 font-medium'
+                        className='bg-blue-500 shadow-lg shadow-blue-500/40 text-white rounded-md px-6 py-2 hover:bg-blue-700 font-medium'
                     >
                         Sign In with {provider.name}
                     </button>

@@ -45,7 +45,7 @@ function MessageList({ initialMessages }: Props) {
     // console.log(messages);
 
     return (
-        <div className='space-y-5 px-10 pt-20 pb-48 max-w-2xl xl:max-w-4xl mx-auto my-auto'>
+        <div className='space-y-5 px-10 pt-32 pb-32 max-w-2xl xl:max-w-4xl mx-auto my-auto'>
             {(messages! || initialMessages).map((message) => (
                 <MessageComponent message={message} key={message.id} />
             ))}

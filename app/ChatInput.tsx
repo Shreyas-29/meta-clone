@@ -58,7 +58,7 @@ function ChatInput({ session }: any) {
     };
 
     return (
-        <form onSubmit={addMessage} className='flex fixed w-full bottom-0 z-50 px-10 py-5 space-x-2 border border-gray-100 bg-white'>
+        <form onSubmit={addMessage} className='flex fixed w-full bottom-0 z-50 px-5 md:px-10 py-5 space-x-2 border border-gray-100 bg-white'>
             <input
                 type="text"
                 value={input}
@@ -70,7 +70,7 @@ function ChatInput({ session }: any) {
             <button
                 type='submit'
                 disabled={!input}
-                className='bg-blue-500 text-white rounded-md px-5 py-2 hover:bg-blue-700 font-medium disabled:opacity-50 disabled:cursor-not-allowed'
+                className='bg-blue-500 text-white rounded-md px-4 text-sm md:text-base md:px-5 py-2 hover:bg-blue-700 font-medium disabled:opacity-50 disabled:cursor-not-allowed'
             >
                 Send
             </button>

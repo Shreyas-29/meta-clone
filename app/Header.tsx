@@ -15,12 +15,12 @@ function Header({ session }: any) {
         return (
             <header className='fixed top-0 z-50 bg-white flex justify-between items-center px-5 py-10 md:p-10 shadow-md w-full'>
                 <div className='flex space-x-3'>
-                    <Image unoptimized src={'/meta.png'} alt='user' width={1000} height={1000} className='w-12 h-auto rounded-full' />
+                    <Image unoptimized src={session.user?.image!} alt='user' width={1000} height={1000} className='w-12 h-auto rounded-full' />
                     {/* session.user?.image! */}
                     <div>
                         <p className='text-blue-500'>Logged in as:</p>
                         <p className='font-medium text-lg'>
-                            {/* {session.user?.name} */}Shreyas Sihasane
+                            {session.user?.name}
                         </p>
                     </div>
                 </div>

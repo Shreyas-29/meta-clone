@@ -13,7 +13,7 @@ function Header({ session }: any) {
 
     if (session)
         return (
-            <header className='fixed top-0 z-50 bg-white flex justify-between items-center px-10 py-6 w-full shadow-md'>
+            <header className='fixed top-0 z-50 bg-white flex justify-between items-center px-10 py-6 w-full shadow-md w-full'>
                 <div className='flex space-x-3'>
                     <Image unoptimized src={session.user?.image!} alt='user' width={1000} height={1000} className='w-12 h-auto rounded-full' />
 
@@ -29,7 +29,7 @@ function Header({ session }: any) {
         )
 
     return (
-        <header className='fixed top-0 z-50 bg-white flex justify-center items-center p-10 shadow-md'>
+        <header className='fixed top-0 z-50 bg-white flex justify-center items-center p-10 shadow-md w-full'>
             <div className='flex flex-col items-center space-y-5'>
                 <div className='flex items-center space-x-2'>
                     <Image src='/meta.png' alt='meta' width={1000} height={1000} className='w-12 h-auto' />

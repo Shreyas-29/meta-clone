@@ -1,5 +1,9 @@
 <h1 align="center">Meta Clone</h1>
 
+<p align="center">
+  <img src="https://img.freepik.com/free-vector/meta-logo-file-social-media-icon-vector-3-november-2021-bangkok-thailand_53876-157873.jpg?w=2000" alt="Meta Logo" width="200" height="200">
+</p>
+
 <p align="center">Welcome to Meta Clone, a social media platform inspired by Meta (formerly Facebook). This project aims to replicate the core features of Meta, providing users with a familiar and engaging experience to connect, share, and interact with others.</p>
 
 ## Features
